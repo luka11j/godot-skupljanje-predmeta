@@ -1,7 +1,7 @@
 # Skupljanje predmeta
 
 Jednostavna 2D igra napravljena u Godotu 4.
-Cilj je pokupiti sva cetiri predmeta i izbjegavati zidove.
+Cilj je pokupiti sva tri predmeta i izbjegavati zidove.
 
 ## Upravljanje
 
@@ -16,8 +16,6 @@ Igrac postupno ubrzava i usporava zbog trenja.
 
 Predmet nestaje kada igrac ude u njegovo podrucje.
 Dodir bilo kojeg zida ponovno pokrece cijelu razinu.
-Nakon skupljanja svih predmeta prikazuje se poruka:
-"Bravo, zavrsio si igru!"
 
 ## Pokretanje
 
