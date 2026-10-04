@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://d3xu4i303kkct"]
+
+[ext_resource type="Script" uid="uid://cbdrfkj26pp4p" path="res://scripts/igrac.gd" id="1_dfpsh"]
+[ext_resource type="Texture2D" uid="uid://bomyii24cp3en" path="res://icon.svg" id="2_wne0e"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cmnmx"]
+size = Vector2(38, 38)
+
+[node name="Igrac" type="CharacterBody2D" unique_id=1895332844]
+script = ExtResource("1_dfpsh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1751342580]
+shape = SubResource("RectangleShape2D_cmnmx")
+
+[node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D" unique_id=1309844452]
+modulate = Color(0.82632494, 0.79038733, 0.9972603, 1)
+self_modulate = Color(0.40805733, 0.39168903, 1, 1)
+scale = Vector2(0.32, 0.32)
+texture = ExtResource("2_wne0e")

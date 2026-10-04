@@ -1,0 +1,12 @@
+.godot/
+exports/
+build/
+dist/
+*.exe
+*.pck
+*.apk
+*.aab
+*.app/
+*.dmg
+.DS_Store
+Thumbs.db

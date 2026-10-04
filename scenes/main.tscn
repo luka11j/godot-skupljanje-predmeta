@@ -1,0 +1,176 @@
+[gd_scene format=3 uid="uid://51cblegcuxkr"]
+
+[ext_resource type="PackedScene" uid="uid://d3xu4i303kkct" path="res://scenes/igrac.tscn" id="1_0wfyh"]
+[ext_resource type="PackedScene" uid="uid://bo7f5gs0fx3ai" path="res://scenes/predmet.tscn" id="2_sugp2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1u6mt"]
+size = Vector2(800, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bdoqp"]
+size = Vector2(500, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3nkxo"]
+size = Vector2(20, 600)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ardpv"]
+size = Vector2(20, 600)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cmnmx"]
+size = Vector2(20, 500)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_cmnmx"]
+radius = 15.0
+
+[node name="Main" type="Node2D" unique_id=65828383]
+
+[node name="Igrac" parent="." unique_id=1895332844 instance=ExtResource("1_0wfyh")]
+
+[node name="Predmet" parent="." unique_id=467794098 instance=ExtResource("2_sugp2")]
+position = Vector2(694, 107)
+
+[node name="Predmet2" parent="." unique_id=1694771088 instance=ExtResource("2_sugp2")]
+position = Vector2(101, 110)
+
+[node name="Predmet3" parent="." unique_id=562433900 instance=ExtResource("2_sugp2")]
+position = Vector2(169, 435)
+
+[node name="Zidgore" type="StaticBody2D" parent="." unique_id=835718234]
+position = Vector2(400, 10)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Zidgore" unique_id=428151010]
+shape = SubResource("RectangleShape2D_1u6mt")
+
+[node name="ColorRect" type="ColorRect" parent="Zidgore/CollisionShape2D" unique_id=1632369802]
+offset_left = -400.0
+offset_top = -10.0
+offset_right = 400.0
+offset_bottom = 10.0
+color = Color(0.39115477, 0.2890778, 0.42380252, 1)
+
+[node name="Zid2" type="StaticBody2D" parent="." unique_id=2118890200]
+position = Vector2(250, 200)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Zid2" unique_id=243918980]
+shape = SubResource("RectangleShape2D_bdoqp")
+
+[node name="ColorRect" type="ColorRect" parent="Zid2/CollisionShape2D" unique_id=1915004336]
+offset_left = -250.0
+offset_top = -10.0
+offset_right = 250.0
+offset_bottom = 10.0
+color = Color(0.39215687, 0.2901961, 0.42352942, 1)
+
+[node name="Zid3" type="StaticBody2D" parent="." unique_id=890250029]
+position = Vector2(360, 500)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Zid3" unique_id=1793848051]
+shape = SubResource("RectangleShape2D_bdoqp")
+
+[node name="ColorRect" type="ColorRect" parent="Zid3/CollisionShape2D" unique_id=459441329]
+offset_left = -250.0
+offset_top = -10.0
+offset_right = 250.0
+offset_bottom = 10.0
+color = Color(0.39215687, 0.2901961, 0.42352942, 1)
+
+[node name="Ziddolje" type="StaticBody2D" parent="." unique_id=1002510362]
+position = Vector2(400, 590)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ziddolje" unique_id=779582297]
+shape = SubResource("RectangleShape2D_1u6mt")
+
+[node name="izgled" type="ColorRect" parent="Ziddolje/CollisionShape2D" unique_id=794685520]
+offset_left = -400.0
+offset_top = -10.0
+offset_right = 400.0
+offset_bottom = 10.0
+color = Color(0.39215687, 0.2901961, 0.42352942, 1)
+
+[node name="Zidlijevo" type="StaticBody2D" parent="." unique_id=652296481]
+position = Vector2(10, 300)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Zidlijevo" unique_id=1036867274]
+shape = SubResource("RectangleShape2D_3nkxo")
+
+[node name="ColorRect" type="ColorRect" parent="Zidlijevo/CollisionShape2D" unique_id=845456131]
+offset_left = -10.0
+offset_top = -300.0
+offset_right = 10.0
+offset_bottom = 300.0
+color = Color(0.39215687, 0.2901961, 0.42352942, 1)
+
+[node name="Ziddesno" type="StaticBody2D" parent="." unique_id=189022083]
+position = Vector2(790, 300)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ziddesno" unique_id=1991504481]
+shape = SubResource("RectangleShape2D_ardpv")
+
+[node name="ColorRect" type="ColorRect" parent="Ziddesno/CollisionShape2D" unique_id=1317571050]
+offset_left = -10.0
+offset_top = -300.0
+offset_right = 10.0
+offset_bottom = 300.0
+color = Color(0.39215687, 0.2901961, 0.42352942, 1)
+
+[node name="Zid" type="StaticBody2D" parent="." unique_id=157025]
+position = Vector2(600, 250)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Zid" unique_id=1130152528]
+shape = SubResource("RectangleShape2D_cmnmx")
+
+[node name="ColorRect" type="ColorRect" parent="Zid/CollisionShape2D" unique_id=342648552]
+offset_left = -10.0
+offset_top = -250.0
+offset_right = 10.0
+offset_bottom = 250.0
+color = Color(0.39215687, 0.2901961, 0.42352942, 1)
+
+[node name="zvjezdice" type="StaticBody2D" parent="." unique_id=1890102417]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="zvjezdice" unique_id=842396908]
+position = Vector2(87, 345)
+shape = SubResource("CircleShape2D_cmnmx")
+
+[node name="Polygon2D" type="Polygon2D" parent="zvjezdice/CollisionShape2D" unique_id=944943229]
+color = Color(0.39215687, 0.2901961, 0.42352942, 1)
+polygon = PackedVector2Array(11, -10, -5, -12, -10, -11, -5, -4, -8, -1, -14, -1, -5, 2, 1, 2, -9, 10, 2, 11, 13, 4, 1, -2)
+
+[node name="zvjezdice2" type="StaticBody2D" parent="." unique_id=676006498]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="zvjezdice2" unique_id=1743487895]
+position = Vector2(454, 398)
+shape = SubResource("CircleShape2D_cmnmx")
+
+[node name="Polygon2D" type="Polygon2D" parent="zvjezdice2/CollisionShape2D" unique_id=1446885069]
+color = Color(0.39215687, 0.2901961, 0.42352942, 1)
+polygon = PackedVector2Array(11, -10, -5, -12, -10, -11, -5, -4, -8, -1, -14, -1, -5, 2, 1, 2, -9, 10, 2, 11, 13, 4, 1, -2)
+
+[node name="zvjezdice3" type="StaticBody2D" parent="." unique_id=1243071196]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="zvjezdice3" unique_id=1511323019]
+position = Vector2(435, 264)
+shape = SubResource("CircleShape2D_cmnmx")
+
+[node name="Polygon2D" type="Polygon2D" parent="zvjezdice3/CollisionShape2D" unique_id=153764234]
+color = Color(0.39215687, 0.2901961, 0.42352942, 1)
+polygon = PackedVector2Array(11, -10, -5, -12, -10, -11, -5, -4, -8, -1, -14, -1, -5, 2, 1, 2, -9, 10, 2, 11, 13, 4, 1, -2)
+
+[node name="zvjezdice4" type="StaticBody2D" parent="." unique_id=1003594839]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="zvjezdice4" unique_id=236043077]
+position = Vector2(535, 109)
+shape = SubResource("CircleShape2D_cmnmx")
+
+[node name="Polygon2D" type="Polygon2D" parent="zvjezdice4/CollisionShape2D" unique_id=1238601700]
+color = Color(0.39215687, 0.2901961, 0.42352942, 1)
+polygon = PackedVector2Array(11, -10, -5, -12, -10, -11, -5, -4, -8, -1, -14, -1, -5, 2, 1, 2, -9, 10, 2, 11, 13, 4, 1, -2)
+
+[node name="zvjezdice5" type="StaticBody2D" parent="." unique_id=524911198]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="zvjezdice5" unique_id=1009525141]
+position = Vector2(694, 232)
+shape = SubResource("CircleShape2D_cmnmx")
+
+[node name="Polygon2D" type="Polygon2D" parent="zvjezdice5/CollisionShape2D" unique_id=721087624]
+color = Color(0.39215687, 0.2901961, 0.42352942, 1)
+polygon = PackedVector2Array(11, -10, -5, -12, -10, -11, -5, -4, -8, -1, -14, -1, -5, 2, 1, 2, -9, 10, 2, 11, 13, 4, 1, -2)

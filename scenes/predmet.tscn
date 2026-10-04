@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bo7f5gs0fx3ai"]
+
+[ext_resource type="Script" uid="uid://gai8ewhcn1mf" path="res://scripts/predmet.gd" id="1_qwsqw"]
+[ext_resource type="Texture2D" uid="uid://bomyii24cp3en" path="res://icon.svg" id="2_oo15f"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cmnmx"]
+size = Vector2(30, 30)
+
+[node name="Predmet" type="Area2D" unique_id=467794098]
+script = ExtResource("1_qwsqw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2138420620]
+shape = SubResource("RectangleShape2D_cmnmx")
+
+[node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D" unique_id=489093053]
+self_modulate = Color(0.4162519, 0.8225501, 0.52809346, 1)
+scale = Vector2(0.24, 0.24)
+texture = ExtResource("2_oo15f")
